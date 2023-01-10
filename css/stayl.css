@@ -2,9 +2,12 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  font-family: open sans, "sans-serif";
 }
 .container{
-  width: 80%;
+  width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: auto;
 
 }
@@ -29,9 +32,17 @@
   height: 49px;
 }
 .logo-content{
- font-size: 24px;
+ font-size: 23px;
  line-height: 47px;
  padding-left: 16px;
+ color: #222222;
+ transition: 0.3s all ease;
+}
+.logo-content:hover{
+  color: #DE2E54;
+}
+.logo-content:active{
+  color: #de2e544a;
 }
 .nav-links{
   display: flex;
@@ -44,8 +55,15 @@
   margin-right: 32px;
   line-height: 47px;
   font-size: 17px;
-  font-family: sans-serif;
-  font-weight: 700;
+  font: bold;
+  color: #222222;
+  transition: 0.3s all ease;
+}
+.nav-link a:hover{
+  color: #DE2E54;
+}
+.nav-link a:active{
+  color: #de2e5458;
 }
 .nav-link:last-child{
   margin-right: 0px;
@@ -56,9 +74,200 @@
   padding: 12px 2px;
   border-radius: 8px;
   border: none;
+  font-family: open sans;
   font-size: 13px;
   letter-spacing: 1px;
   font-weight: 500;
   color: #fff;
   background-color: #DE2E54;
+  transition: 0.3s all ease;
+}
+.nav-button:hover{
+  background-color: #fff;
+  color: #DE2E54;
+  border: 1.6px solid #DE2E54;
+  font-weight: bold;
+}
+.nav-button:active{
+  background-color: #de2e5484;
+  color: #ffffff;
+  border: none;
+}
+/*  MAIN HERO  */
+.hero{
+  width: 100%;
+  background-color: #0EB4C1;
+  height: 533px;
+}
+.main-header{
+  display: flex;
+  justify-content: space-between;
+}
+.hedr-box{
+  width: 550px;
+  height: 200px;
+}
+.hero-content{
+  font-size: 36px;
+  color: #fff;
+  margin-top: 120px;
+  margin-bottom: 30px;
+  line-height: 43px;
+  font-weight: 700;
+}
+.hero-text{
+  width: 440px;
+  font-family: open sans;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 35px;
+}
+.hero-button{
+  background-color: #DE2E54;
+  color: #fff;
+  font-family: open sans;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  transition: 0.3s all ease;
+}
+.hero-button:hover{
+  background-color: #de2e54c3;
+}
+.hero-button:active{
+  background-color: #de2e5479;
+}
+.hero-img{
+ margin-top: 30px;
+}
+/* MAIN SERVIS */
+.mein-box{
+  padding: 100px;
+}
+.servi-content{
+  font-size: 30px;
+  color: #222222;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.box-img{
+  display:flex;
+  margin-bottom: 50px;
+}
+.box-img img{
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  margin-top: 0px;
+}
+.box-text{
+  width: 560px;
+}
+.box-text h4{
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.box-text p{
+  font-size: 16px;
+  line-height: 21px;
+}
+.main-button{
+  width: 900px;
+  text-align: center;
+}
+.servis-button{
+  background-color: #DE2E54;
+  border: 1.5px solid #DE2E54;
+  color: #fff;
+  padding: 15px 22px;
+  border-radius: 8px;
+  border: none;
+  transition: 0.3s all ease;
+}
+.servis-button:hover{
+  background-color: #ffffff;
+  color: #DE2E54;
+  border: 1.5px solid #DE2E54;
+}
+.servis-button:active{
+  background-color: #DE2E54;
+  color: #ffffff;
+}
+
+.mein-footer{
+  display: flex;
+  background-color: #0EB4C1;
+  height: 253px;
+}
+.feature{
+  margin: auto;
+  width: 460px;
+  margin-top: 30px;
+
+}
+.feature-content{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: center;
+}
+.feature-button{
+  color: #ffffff;
+  background-color: #0eb5c1e0;
+  border: 1.9px solid #fff;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 8px;
+  margin-left: 25px;
+  transition: 0.3s all ease;
+}
+.feature-button:hover{
+  background-color: #DE2E54;
+  border: 1.9px solid #DE2E54;
+}
+.feature-button:active{
+  background-color: #de2e54a4;
+}
+footer{
+  background-color: #222222;
+  padding: 30px 0px 20px 0px;
+
+}
+.footer-nav{
+  display: flex;
+  justify-content: space-between;
+}
+.footer{
+  color: #ffffff;
+}
+.footer-link{
+  display: flex;
+  list-style: none;
+}
+
+.footer-link li{
+  margin-right: 32px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 21px;
+  padding-top: 10px;
+}
+
+.footer-link li a{
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s all ease;
+}
+.footer-link li a:hover{
+  color: #DE2E54;
+}
+.footer-link li a:active{
+  color: #de2e5487;
 }
